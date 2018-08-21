@@ -30,6 +30,7 @@ class NikeSpider(scrapy.Spider):
 		#link = response.css('span.js-display-url::text').extract_first() 	#exctract first tweet
 		
 		#tweet = 'http://'+tweet
+		os.chdir('../../../.gitignore/')
 		files = os.listdir()
 		if 'NikeTwitterStrings.txt' in files:
 			os.remove('NikeTwitterStrings.txt')
